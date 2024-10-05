@@ -38,13 +38,13 @@ Instale o Python em sua versão mais recente, certifique-se de marcar as opçõe
 1. Clone o repositório:
 
     ```bash
-        git clone https://github.com/httpsotavio/discordStoreBot.git
+    git clone https://github.com/httpsotavio/discordStoreBot.git
     ```
 
 2. Instale as dependências necessárias
 
     ```python
-        pip -r requirements.txt
+    pip -r requirements.txt
     ```
 
 3. Abra o arquivo .env e preencha com suas chaves de API, obtidas através da plataforma Stripe e Discord Developer Portal.
@@ -52,13 +52,13 @@ Instale o Python em sua versão mais recente, certifique-se de marcar as opçõe
 4. Em um terminal, navegue até a pasta server, e execute o seguinte comando
 
     ```python
-        py stripePayment.py
+    py stripePayment.py
     ```
 
 5. Em um novo terminal, na pasta raiz do projeto, execute o seguinte comando para subir o bot ao ar
 
     ```python
-        py bot.py
+    py bot.py
     ```
 
 Se tudo ocorrer bem, já é pra você ter um bot funcional no ar!
@@ -66,15 +66,19 @@ Se tudo ocorrer bem, já é pra você ter um bot funcional no ar!
 ## Utilização
 
 Você deverá definir uma categoria no arquivo `donateViews.py`, no diretório `utils/views`, na linha 84, por padrão, a categoria é `"🛒| Carrinho"`, esta categoria precisa existir no seu servidor do Discord para que os canais de tickets sejam criados dentro dela.
+
 ![Carrinho](images/carrinho.png)
 
 Em um canal avulso, execute o comando `/aimcolor`, sua mensagem será deletada e o bot enviará uma mensagem com um menu dropdown, onde tudo deverá correr em um fluxo a partir dai.
+
 ![Aimcolor](images/aimcolor.png)
 
 Logo após, o canal de ticket poderá ser acessado pelo usuário que o solicitou, aparentando da seguinte forma:
+
 ![Ticket](images/ticket.png)
 
-Após isso, tudo seguirá um fluxo padrão, como você pode ver no exemplo abaixo.
+Após isso, tudo seguirá um fluxo padrão, como você pode ver no vídeo abaixo.
+
 ![Demo](demo.mp4)
 
 ## Considerações finais
